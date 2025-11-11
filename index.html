@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/coin.png">
+</head>
+
+<body>
+    <header>
+        <h1>Conversor de Divisas</h1>
+        <p>Convierte tus pesos mexicanos a otras monedas.</p>
+    </header>
+    <main class="container">
+        <section class="formulario">
+            <form id="forma">
+                <!-- FOR="CANTIDAD": vincula con el campo de entrada que tiene id="cantidad" -->
+                <label for="cantidad">Cantidad en pesos (MXN):</label>
+                <!-- STEP="ANY": permite decimales -->
+                <input type="number" step="any" id="cantidad" placeholder="Ej: 1000.50" required>
+                <!-- menú desplegable con opciones para elegir la conversión -->
+                <label for="monedaDestino">Convertir a:</label>
+                <select id="monedaDestino" required>
+                    <option value="EGP">Piastra egipcia (₤E)</option>
+                    <option value="ITL">Lira italiana (₤)</option>
+                    <option value="ATS">Chelín austriaco (₢)</option>
+                    <option value="FRF">Franco francés (₣)</option>
+                </select>
+                <input type="submit" value="Convertir">
+            </form>
+        </section>
+        <section class="resultado">
+            <h2>Resultado</h2>
+            <p id="resumen"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Natalia Shaiel Hernández Rómulo</p>
+        <p>24001790</p>
+        <p>LEVN402</p>
+        <P>Aplicaciones Web</P>
+        <p>Docente Teresita de Jesús López Segura</p>
+        <p>Domingo, 26 de octubre de 2025</p>
+        <p><i>Universidad Técnológica de León</i></p>
+    </footer>
+    <script src="js/miScript.js"></script>
+</body>
+
+</html>
